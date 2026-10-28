@@ -47,6 +47,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>sing-box</string>
+				<string>horekvpn</string>
 			</array>
 		</dict>
 	</array>
@@ -59,18 +60,6 @@
 				<string>sing-box:profile</string>
 			</dict>
 		</array>
-	</dict>
-	<key>NSUbiquitousContainers</key>
-	<dict>
-		<key>iCloud.$(BASE_PACKAGE_IDENTIFIER)</key>
-		<dict>
-			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
-			<true/>
-			<key>NSUbiquitousContainerName</key>
-			<string>sing-box</string>
-			<key>NSUbiquitousContainerSupportedFolderLevels</key>
-			<string>Any</string>
-		</dict>
 	</dict>
 	<key>UIBackgroundModes</key>
 	<array>
@@ -128,7 +117,7 @@
 		</dict>
 	</array>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>As a universal proxy platform, sing-box configures routing according to your configuration.</string>
+	<string>Приложению нужен доступ к локальной сети, чтобы корректно настроить маршрутизацию VPN.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera access is required to scan QR codes for importing profiles.</string>
 </dict>
