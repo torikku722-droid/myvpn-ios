@@ -289,9 +289,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				3AE396032C21A5CC00647718 /* WidgetExtension.appex in Embed Foundation Extensions */,
 				3AEAEE992A4F16430059612D /* Extension.appex in Embed Foundation Extensions */,
-				3AAAFB2E2EF5218F004C69AD /* FileProviderExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +344,6 @@
 			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
 			dstSubfolderSpec = 16;
 			files = (
-				3A8655142A4FA26600B7181F /* IntentsExtension.appex in Embed ExtensionKit Extensions */,
 			);
 			name = "Embed ExtensionKit Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1133,7 +1130,6 @@
 				3AEC20F12A459AB400A63465 /* Resources */,
 				3A44BB782A4DC17000E4C9F8 /* Embed Foundation Extensions */,
 				3A9759222A4EB69C00E4404B /* Embed Frameworks */,
-				3A8655172A4FA26600B7181F /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
@@ -1141,10 +1137,7 @@
 				3AEC21382A459E0A00A63465 /* PBXTargetDependency */,
 				3A44BB7F2A4DC1D800E4C9F8 /* PBXTargetDependency */,
 				3AEAEE9B2A4F16430059612D /* PBXTargetDependency */,
-				3A8655162A4FA26600B7181F /* PBXTargetDependency */,
 				3A4EAD3A2A4FEC20005435B3 /* PBXTargetDependency */,
-				3AE396022C21A5CC00647718 /* PBXTargetDependency */,
-				3AAAFB2D2EF5218F004C69AD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				3ADDCEB42E8B723B009ACE1D /* SFI */,

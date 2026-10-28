@@ -77,22 +77,9 @@ class ApplicationDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCe
             } catch {
                 NSLog("setup profile server error: \(error.localizedDescription)")
             }
-            registerFileProviderDomain()
         }
     }
 
-    @available(iOS 16.0, *)
-    private nonisolated func registerFileProviderDomain() {
-        let domain = NSFileProviderDomain(
-            identifier: NSFileProviderDomainIdentifier(AppConfiguration.fileProviderDomainID),
-            displayName: "sing-box"
-        )
-        NSFileProviderManager.add(domain) { error in
-            if let error {
-                NSLog("Failed to add file provider domain: \(error)")
-            }
-        }
-    }
 
     private nonisolated func requestNetworkPermission() async {
         if await SharedPreferences.networkPermissionRequested.get() {
