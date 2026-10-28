@@ -9,7 +9,7 @@ struct Application: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            HorekRootView()
                 .environmentObject(environments)
         }
     }
