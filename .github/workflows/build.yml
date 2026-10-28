@@ -7,9 +7,13 @@ jobs:
     env:
       DISABLE_SWIFTLINT: "1"
     steps:
-      - uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: latest-stable
+      - name: Select newest Xcode
+        run: | 
+          ls -d /Applications/Xcode*.app
+          NEWEST=$(ls -d /Applications/Xcode_*.app | grep -vi beta | sort -V | tail -1)
+          echo "Using $NEWEST"
+          sudo xcode-select -s "$NEWEST/Contents/Developer"
+          xcodebuild -version
       - uses: actions/checkout@v4
         with:
           submodules: recursive
